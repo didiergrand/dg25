@@ -1,0 +1,127 @@
+body{
+    color: var(--white);
+    background: linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
+  }
+  a{
+    color: var(--pink);
+  }
+  a:hover{
+    color: var(--pink-800);
+  }
+  a:active{
+    color: var(--pink-900);
+  }
+  a:focus,
+  a:visited{
+    color: var(--pink);
+  }
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    @media only screen and (min-width: 768px) {
+      padding: 0 2rem;
+    }
+  }
+  main{
+    overflow: hidden;
+  }
+  .mobile{
+    display: block;
+  }
+  @media only screen and (min-width: 768px) {
+    .mobile{
+      display: none;
+    }
+  }
+
+  .wp-block-button__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-family: AlumniSansBold;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+.wp-block-button__link:visited{
+  background-color: var(--pink);
+  color: var(--white);
+}
+.wp-block-button__link:active,
+.wp-block-button__link:focus,
+.wp-block-button__link:hover{
+    background-color: var(--pink-900);
+    color: var(--white);
+}
+.light-section{
+  background: linear-gradient(to right, var(--bg-gradient3), var(--bg-gradient4));
+  color: var(--blue);
+}
+ul,ol{
+  margin-left: 0;
+  padding-left: 1.25rem;
+}
+ul li,ol li{
+  margin-bottom: 0.5rem;
+}
+.wp-block-gallery{
+  background-color:var(--white);
+}
+.wp-block-gallery figure {
+  padding: 10px;
+  @media only screen and (min-width: 768px) {
+    padding: 50px;
+  }
+  aspect-ratio: 1;
+  flex-grow: unset !important;
+}
+.post-content-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-direction: column;
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.post-thumbnail {
+  @media only screen and (min-width: 768px) {
+    flex: 0 0 50%;
+  }
+}
+
+.post-content-wrapper .entry-content {
+  flex: 1;
+  margin-top: 0;
+}
+.pll-switcher-select{
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+a.more-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+a.more-link:hover {
+    background-color: var(--pink-900);
+    color: var(--white);
+}
