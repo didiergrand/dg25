@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: jcis-forum-2026\n"
+"Project-Id-Version: digitalgarage-2025\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
 "POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
 "PO-Revision-Date: 2025-02-11 19:20+0100\n"

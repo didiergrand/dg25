@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 ?>
@@ -15,13 +15,13 @@
 
 	</header><!-- .entry-header -->
 
-	<?php jcis_forum_2026_post_thumbnail(); ?>
+	<?php Digitalgarage_2025_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php jcis_forum_2026_entry_footer(); ?>
+		<?php Digitalgarage_2025_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

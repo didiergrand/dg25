@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 ?>
@@ -25,7 +25,7 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text"
-			href="#primary"><?php esc_html_e( 'Skip to content', 'jcis-forum-2026' ); ?></a>
+			href="#primary"><?php esc_html_e( 'Skip to content', 'digitalgarage-2025' ); ?></a>
 
 		<header id="masthead" class="site-header">
 			<div class="header-container">
@@ -43,11 +43,11 @@
 							rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php
 				endif;
-				$jcis_forum_2026_description = get_bloginfo( 'description', 'display' );
-				if ( $jcis_forum_2026_description || is_customize_preview() ) :
+				$Digitalgarage_2025_description = get_bloginfo( 'description', 'display' );
+				if ( $Digitalgarage_2025_description || is_customize_preview() ) :
 					?>
 					<p class="site-description">
-						<?php echo $jcis_forum_2026_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						<?php echo $Digitalgarage_2025_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->

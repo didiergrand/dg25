@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

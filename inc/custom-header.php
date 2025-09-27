@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses jcis_forum_2026_header_style()
+ * @uses Digitalgarage_2025_header_style()
  */
-function jcis_forum_2026_custom_header_setup() {
+function Digitalgarage_2025_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'jcis_forum_2026_custom_header_args',
+			'Digitalgarage_2025_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'jcis_forum_2026_header_style',
+				'wp-head-callback'   => 'Digitalgarage_2025_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'jcis_forum_2026_custom_header_setup' );
+add_action( 'after_setup_theme', 'Digitalgarage_2025_custom_header_setup' );
 
-if ( ! function_exists( 'jcis_forum_2026_header_style' ) ) :
+if ( ! function_exists( 'Digitalgarage_2025_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see jcis_forum_2026_custom_header_setup().
+	 * @see Digitalgarage_2025_custom_header_setup().
 	 */
-	function jcis_forum_2026_header_style() {
+	function Digitalgarage_2025_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

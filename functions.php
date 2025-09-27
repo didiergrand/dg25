@@ -1,10 +1,10 @@
 <?php
 /**
- * JCIS Forum 2026 functions and definitions
+ * Digitalgarage 2025 functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -19,14 +19,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function jcis_forum_2026_setup() {
+function Digitalgarage_2025_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on JCIS Forum 2026, use a find and replace
-		* to change 'jcis-forum-2026' to the name of your theme in all the template files.
+		* If you're building a theme based on Digitalgarage 2025, use a find and replace
+		* to change 'digitalgarage-2025' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'jcis-forum-2026', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'digitalgarage-2025', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ function jcis_forum_2026_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'jcis-forum-2026' ),
+			'menu-1' => esc_html__( 'Primary', 'digitalgarage-2025' ),
 		)
 	);
 
@@ -74,7 +74,7 @@ function jcis_forum_2026_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'jcis_forum_2026_custom_background_args',
+			'Digitalgarage_2025_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -100,7 +100,7 @@ function jcis_forum_2026_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'jcis_forum_2026_setup' );
+add_action( 'after_setup_theme', 'Digitalgarage_2025_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,22 +109,22 @@ add_action( 'after_setup_theme', 'jcis_forum_2026_setup' );
  *
  * @global int $content_width
  */
-function jcis_forum_2026_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'jcis_forum_2026_content_width', 640 );
+function Digitalgarage_2025_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'Digitalgarage_2025_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'jcis_forum_2026_content_width', 0 );
+add_action( 'after_setup_theme', 'Digitalgarage_2025_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function jcis_forum_2026_widgets_init() {
+function Digitalgarage_2025_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'jcis-forum-2026' ),
+			'name'          => esc_html__( 'Sidebar', 'digitalgarage-2025' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'jcis-forum-2026' ),
+			'description'   => esc_html__( 'Add widgets here.', 'digitalgarage-2025' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -134,9 +134,9 @@ function jcis_forum_2026_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Widgets', 'jcis-forum-2026' ),
+			'name'          => esc_html__( 'Footer Widgets', 'digitalgarage-2025' ),
 			'id'            => 'footer-widgets',
-			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'jcis-forum-2026' ),
+			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'digitalgarage-2025' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -157,9 +157,9 @@ function jcis_forum_2026_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Prefooter Widgets Left', 'jcis-forum-2026' ),
+			'name'          => esc_html__( 'Prefooter Widgets Left', 'digitalgarage-2025' ),
 			'id'            => 'prefooter-widgets-left',
-			'description'   => esc_html__( 'Add widgets here for the left pre-footer column.', 'jcis-forum-2026' ),
+			'description'   => esc_html__( 'Add widgets here for the left pre-footer column.', 'digitalgarage-2025' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -169,9 +169,9 @@ function jcis_forum_2026_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Prefooter Widgets Right', 'jcis-forum-2026' ),
+			'name'          => esc_html__( 'Prefooter Widgets Right', 'digitalgarage-2025' ),
 			'id'            => 'prefooter-widgets-right',
-			'description'   => esc_html__( 'Add widgets here for the right pre-footer column.', 'jcis-forum-2026' ),
+			'description'   => esc_html__( 'Add widgets here for the right pre-footer column.', 'digitalgarage-2025' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -199,22 +199,22 @@ function jcis_forum_2026_widgets_init() {
 		'after_title'   => '</h3>',
 	));
 }
-add_action( 'widgets_init', 'jcis_forum_2026_widgets_init' );
+add_action( 'widgets_init', 'Digitalgarage_2025_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function jcis_forum_2026_scripts() {
-	wp_enqueue_style( 'jcis-forum-2026-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'jcis-forum-2026-style', 'rtl', 'replace' );
+function Digitalgarage_2025_scripts() {
+	wp_enqueue_style( 'digitalgarage-2025-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'digitalgarage-2025-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'jcis-forum-2026-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'digitalgarage-2025-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'jcis_forum_2026_scripts' );
+add_action( 'wp_enqueue_scripts', 'Digitalgarage_2025_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -260,7 +260,7 @@ function custom_translate_read_more($more) {
 }
 add_filter('the_content_more_link', 'custom_translate_read_more');
 
-function jcis_forum_2026_load_theme_textdomain() {
-    load_theme_textdomain( 'jcis-forum-2026', get_template_directory() . '/languages' );
+function Digitalgarage_2025_load_theme_textdomain() {
+    load_theme_textdomain( 'digitalgarage-2025', get_template_directory() . '/languages' );
 }
-add_action( 'after_setup_theme', 'jcis_forum_2026_load_theme_textdomain' );
+add_action( 'after_setup_theme', 'Digitalgarage_2025_load_theme_textdomain' );

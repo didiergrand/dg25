@@ -4,6 +4,7 @@ $lang = pll_current_language(); // Récupère la langue active
 
 
 $category_slug = ($lang === 'de') ? 'hero-banner-de' : 'hero-banner';
+echo $category_slug;
 
 // Récupérer les articles de la catégorie correspondante
 $hero_banner_query = new WP_Query(array(

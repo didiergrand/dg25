@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function jcis_forum_2026_jetpack_setup() {
+function Digitalgarage_2025_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'jcis_forum_2026_infinite_scroll_render',
+			'render'    => 'Digitalgarage_2025_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function jcis_forum_2026_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'jcis-forum-2026-style',
+				'stylesheet' => 'digitalgarage-2025-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function jcis_forum_2026_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'jcis_forum_2026_jetpack_setup' );
+add_action( 'after_setup_theme', 'Digitalgarage_2025_jetpack_setup' );
 
-if ( ! function_exists( 'jcis_forum_2026_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'Digitalgarage_2025_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function jcis_forum_2026_infinite_scroll_render() {
+	function Digitalgarage_2025_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

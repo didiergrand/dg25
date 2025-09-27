@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 get_header();

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package JCIS_Forum_2026
+ * @package Digitalgarage_2025
  */
 
 ?>
@@ -22,7 +22,7 @@
 	
 	<div class="post-content-wrapper">
 		<div class="post-thumbnail">
-			<?php jcis_forum_2026_post_thumbnail(); ?>
+			<?php Digitalgarage_2025_post_thumbnail(); ?>
 		</div>
 		
 		<div class="entry-content">
@@ -31,7 +31,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'jcis-forum-2026' ),
+						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'digitalgarage-2025' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -44,7 +44,7 @@
 
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jcis-forum-2026' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'digitalgarage-2025' ),
 					'after'  => '</div>',
 				)
 			);
