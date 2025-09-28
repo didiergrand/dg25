@@ -1,7 +1,4 @@
-body{
-    color: var(--white);
-    background: linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
-  }
+
   a{
     color: var(--pink);
   }
