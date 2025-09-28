@@ -1,4 +1,7 @@
-
+body{
+  background-color: var(--white);
+  color: var(--blue);
+}
   a{
     color: var(--pink);
   }
