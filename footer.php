@@ -52,7 +52,7 @@
 		
 		<div class="container">
 		<div class="site-info">
-		<div>Jeune Chambre Internationale de la Veveyse | </div><div><img src="<?php echo get_template_directory_uri(); ?>/images/digitalgarage.svg" alt="Digitalgarage - Création web & stratégie digitale" width="16"> webdesign & code : Didier Grand - <a href="https://digitalgarage.ch?ref=digitalgarage-2025" target="_blank" title="Digitalgarage - Création web & stratégie digitale">digitalgarage.ch</a>
+		<div>Digitalgarage 2025 | Didier Grand | </div><div><img src="<?php echo get_template_directory_uri(); ?>/images/digitalgarage.svg" alt="Digitalgarage - Création web & stratégie digitale" width="16"> webdesign & code : Didier Grand - <a href="https://digitalgarage.ch?ref=digitalgarage-2025" target="_blank" title="Digitalgarage - Création web & stratégie digitale">digitalgarage.ch</a>
 		</div></div>
 		</div>
 	</footer><!-- #colophon -->
