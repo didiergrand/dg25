@@ -11,9 +11,6 @@ get_header(); ?>
     <!-- Hero Banner Section -->
     <?php get_template_part('template-parts/sections/hero-banner'); ?>
 
-    <!-- Ticker Banner Section -->
-    <?php get_template_part('template-parts/sections/ticker-banner'); ?>
-
     <!-- Showtime Section -->
     <?php get_template_part('template-parts/sections/showtime'); ?>
 

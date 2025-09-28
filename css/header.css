@@ -1,7 +1,6 @@
 /* Header styles */
 .site-header {
     padding: 1rem;
-    background: linear-gradient(to right, var(--bg-gradient1), var(--bg-gradient2));
     position: relative;
     z-index: 100;
     padding: 0;
@@ -80,7 +79,6 @@
     font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--white);
 }
 /* Responsive styles */
 @media screen and (max-width: 1024px) {
@@ -152,7 +150,6 @@
         height: 4px;
         width: 100%;
         border-radius: var(--radius);
-        background-color: var(--white);
     }
 
     .hamburger-lines .line1 {

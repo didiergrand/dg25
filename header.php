@@ -43,11 +43,11 @@
 							rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php
 				endif;
-				$Digitalgarage_2025_description = get_bloginfo( 'description', 'display' );
-				if ( $Digitalgarage_2025_description || is_customize_preview() ) :
+				$digitalgarage_2025_description = get_bloginfo( 'description', 'display' );
+				if ( $digitalgarage_2025_description || is_customize_preview() ) :
 					?>
 					<p class="site-description">
-						<?php echo $Digitalgarage_2025_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						<?php echo $digitalgarage_2025_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
